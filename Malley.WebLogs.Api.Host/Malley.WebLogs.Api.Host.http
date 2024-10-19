@@ -1,0 +1,6 @@
+@Malley.WebLogs.Api.Host_HostAddress = http://localhost:5199
+
+GET {{Malley.WebLogs.Api.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
