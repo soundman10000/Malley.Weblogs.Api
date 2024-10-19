@@ -12,6 +12,8 @@ public class MicroWaveWebLogBuilder : IWebLogBuilder<MicrowaveCookLog>
     private static readonly Faker<MicrowaveCookLog> Rng = FakerFactory();
     private static readonly int TaskLimit = 25;
 
+    public WebApplications Application => WebApplications.MircoWave;
+    
     public Task<MicrowaveCookLog> Build() => Rng.Generate().AsTask();
 
     public Task<IEnumerable<MicrowaveCookLog>> Build(int count)
